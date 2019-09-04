@@ -3,9 +3,10 @@ Make sprite sheets or gif previews of your videos using Node.js
 
 The module creates two types of previews:
  - Horizontal or vertical sprite sheet for css `animation-timing-function: steps(10, end)`
+![preview](https://raw.githubusercontent.com/tpkn/video-preview/master/preview.jpg)
+
  - Animated gif image
 
-![preview](https://raw.githubusercontent.com/tpkn/video-preview/master/preview.jpg)
 
 ## API
 
