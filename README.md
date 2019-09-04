@@ -15,12 +15,12 @@ await VideoPreview(input_file, output_file, total_frames[, options])
 
 ### input_file
 **Type**: _String_  
-Full path to source video file
+Full path to source video file.
 
 
 ### output_file
 **Type**: _String_  
-Full path to future normalized video file
+Full path to preview file. Pay special attention to the file extension, it is here that the type of preview to be made is determined! 
 
 
 ### total_frames
