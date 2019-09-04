@@ -16,7 +16,7 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
       throw new TypeError('The output file is not set');
    }
    if(!isFinite(total_frames) && total_frames > 0){
-      throw new TypeError('No preview length is not defined');
+      throw new TypeError('Total frames is not defined');
    }
 
 
