@@ -154,7 +154,7 @@ const VideoPreview = require('video-preview');
 
 let frames = 10;
 let input_file = './videos/MONICA BELLUCCI in the Matrix Sequels (HD Movie Scenes).mp4';
-let output_file = './videos/MONICA BELLUCCI in the Matrix Sequels (HD Movie Scenes)_preview.gif';
+let output_file = './videos/preview.gif';
 
 VideoPreview(input_file, output_file, frames, { 
 
