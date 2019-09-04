@@ -22,7 +22,6 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
 
    let result = {};
    let output_format = path.extname(output_file).substr(1);
-
    let { 
 
       video_length,
@@ -45,7 +44,6 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
       gifski_bin = 'gifski',
 
       cleanup = false,
-
       silent = false,
 
    } = options;
@@ -125,7 +123,6 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
    // Remove temp folder
    if(cleanup){
       cmd.push(`del /f /q ${temp_dir}${path.sep}*.*`);
-      cmd.push(`del /f /q ${temp_dir}${path.sep}`);
    }
 
 

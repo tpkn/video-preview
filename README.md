@@ -36,13 +36,13 @@ Temporary folder for storing video frames
 
 
 ### options.width   
-**Type**: _Number_ | _String_
+**Type**: _Number_ | _String_   
 Output image width. Read [this article](https://trac.ffmpeg.org/wiki/Scaling) for more info
 
 
 
 ### options.height   
-**Type**: _Number_ | _String_
+**Type**: _Number_ | _String_   
 Output image height. Read [this article](https://trac.ffmpeg.org/wiki/Scaling) for more info
 
 
@@ -64,7 +64,8 @@ Video frames format. `png` gives maximum quality
 ### options.direction   
 **Type**: _String_  
 **Default**: `v`  
-Frames direction for `jpg` or `png` output file   
+Frames direction for `jpg` or `png` sprite sheets   
+
 | Key | Value |
 | ------ | ------ |
 | v | vertical direction |
