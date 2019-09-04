@@ -1,0 +1,26 @@
+{
+   "name": "video-preview",
+   "main": "video-preview.js",
+   "version": "1.0.1",
+   "author": {
+      "url": "https://github.com/tpkn/"
+   },
+	"dependencies": {
+   	"video-length": "latest"
+   },
+   "repository": "https://github.com/tpkn/video-preview",
+   "license": "MIT",
+   "keywords": [
+      "video",
+      "mp4",
+      "screenshot",
+      "preview",
+      "sprite",
+      "poster",
+      "sheet",
+      "gifsky",
+      "spritesheet",
+      "ffmpeg",
+      "convert"
+   ]
+}
