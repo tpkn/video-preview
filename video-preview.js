@@ -6,7 +6,7 @@ const path = require('path');
 const util = require('util');
 const mkdir = util.promisify(fs.mkdir);
 const spawn = require('child_process').spawn;
-const VideoDuration = require('video-length');
+const VideoLength = require('video-length');
 
 async function VideoPreview(input_file, output_file, total_frames, options = {}){
    if(typeof input_file !== 'string'){
@@ -52,7 +52,7 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
 
    // Get video duration if user didn't pass it
    if(typeof video_length !== 'number' && !isFinite(video_length)){
-      video_length = await VideoDuration(input_file, { bin: mediainfo_bin });
+      video_length = await VideoLength(input_file, { bin: mediainfo_bin });
    }
 
    // Resize video frame

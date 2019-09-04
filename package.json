@@ -1,7 +1,7 @@
 {
    "name": "video-previews",
    "main": "video-preview.js",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "author": {
       "url": "https://github.com/tpkn/"
    },
