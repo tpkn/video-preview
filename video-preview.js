@@ -114,7 +114,6 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
       case 'jpeg':
       case 'png': 
          cmd.push(`"${convert_bin}" "${temp_dir}*.${frames_format}" ${direction} ${convert_options} -quality ${quality} "${output_file}"`);
-         console.log(cmd);
       break
       case 'gif':
          let looped = loop ? '' : '--once';
