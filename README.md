@@ -1,11 +1,14 @@
 # Video Preview [![npm Package](https://img.shields.io/npm/v/video-previews.svg)](https://www.npmjs.org/package/video-previews)
 Make sprite sheets or gif previews of your videos using Node.js
 
+
+![preview](https://raw.githubusercontent.com/tpkn/video-preview/master/preview.jpg)
+
+
 The module creates two types of previews:
  - Horizontal or vertical sprite sheet for css `animation-timing-function: steps(10, end)`
  - Animated gif image
 
-![preview](https://raw.githubusercontent.com/tpkn/video-preview/master/preview.jpg)
 
 ## API
 
