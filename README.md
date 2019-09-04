@@ -13,22 +13,22 @@ The module creates two types of previews:
 await VideoPreview(input_file, output_file, total_frames[, options])
 ```
 
-### input_data   
+### input_file
 **Type**: _String_  
 Full path to source video file
 
 
-### output_file   
+### output_file
 **Type**: _String_  
 Full path to future normalized video file
 
 
-### total_frames   
+### total_frames
 **Type**: _Number_  
 The amount of frames in a preview file. If `= 1`, then would be taken frame from `duration / 2` position
 
 
-### options.temp_dir   
+### options.temp_dir
 **Type**: _String_  
 **Default**: `{INPUT FILE PATH}/temp_{UNIQ ID}/`  
 Temporary folder for storing video frames
