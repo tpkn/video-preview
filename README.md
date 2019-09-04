@@ -1,4 +1,4 @@
-# Video Preview [![npm Package](https://img.shields.io/npm/v/video-preview.svg)](https://www.npmjs.org/package/video-preview)
+# Video Preview [![npm Package](https://img.shields.io/npm/v/video-previews.svg)](https://www.npmjs.org/package/video-previews)
 Make sprite sheets or gif previews of your videos using Node.js
 
 The module creates two types of previews:

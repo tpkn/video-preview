@@ -1,12 +1,12 @@
 {
-   "name": "video-preview",
+   "name": "video-previews",
    "main": "video-preview.js",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "author": {
       "url": "https://github.com/tpkn/"
    },
-	"dependencies": {
-   	"video-length": "latest"
+   "dependencies": {
+      "video-length": "latest"
    },
    "repository": "https://github.com/tpkn/video-preview",
    "license": "MIT",
