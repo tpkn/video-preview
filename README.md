@@ -35,6 +35,20 @@ Temporary folder for storing video frames
 
 
 
+### options.video_length   
+**Type**: _Number_  
+**Default**: `true`  
+If not set, then `video-length` module would be used to get actual video length. `video-length` module requires [MediaInfo](https://mediaarea.net/en/MediaInfo) binary!
+
+
+
+### options.frames_format   
+**Type**: _String_  
+**Default**: `jpg`  
+`png` gives maximum quality, but `jpg` is faster
+
+
+
 ### options.width   
 **Type**: _Number_ | _String_   
 Output image width. Read [this article](https://trac.ffmpeg.org/wiki/Scaling) for more info
@@ -47,17 +61,12 @@ Output image height. Read [this article](https://trac.ffmpeg.org/wiki/Scaling) f
 
 
 
-### options.video_length   
+
+### options.quality   
 **Type**: _Number_  
-**Default**: `true`  
-If not set, then `video-length` module would be used to get actual video length. `video-length` module requires [MediaInfo](https://mediaarea.net/en/MediaInfo) binary!
+**Default**: `75`  
+For now it works only for gif output format
 
-
-
-### options.frames_format   
-**Type**: _String_  
-**Default**: `jpg`  
-Video frames format. `png` gives maximum quality
 
 
 
@@ -150,15 +159,9 @@ let output_file = './videos/MONICA BELLUCCI in the Matrix Sequels (HD Movie Scen
 VideoPreview(input_file, output_file, frames, { 
 
    width: 320,
+   quality: 50,
    fps: 1,
-
-   temp_dir: './temp/',
-
-   ffmpeg_bin: path.join(__dirname, 'bin/ffmpeg.exe'), 
-   mediainfo_bin: path.join(__dirname, 'bin/MediaInfo.exe'), 
-   convert_bin: path.join(__dirname, 'bin/convert.exe'), 
-   gifski_bin: path.join(__dirname, 'bin/gifski.exe'), 
-
+   
    cleanup: true,
 
 }).then(result => {

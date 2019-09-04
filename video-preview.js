@@ -30,6 +30,7 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
       height,
 
       frames_format = 'jpg',
+      quality = 75,
       direction = 'v',
       loop = true,
       fps = 1,
@@ -112,11 +113,12 @@ async function VideoPreview(input_file, output_file, total_frames, options = {})
       case 'jpg':
       case 'jpeg':
       case 'png': 
-         cmd.push(`"${convert_bin}" "${temp_dir}*.${output_format}" ${direction} ${convert_options} "${output_file}"`);
+         cmd.push(`"${convert_bin}" "${temp_dir}*.${frames_format}" ${direction} ${convert_options} -quality ${quality} "${output_file}"`);
+         console.log(cmd);
       break
       case 'gif':
          let looped = loop ? '' : '--once';
-         cmd.push(`"${gifski_bin}" --output "${output_file}" --fps ${fps} --quiet ${looped} ${temp_dir}*.${frames_format}`);
+         cmd.push(`"${gifski_bin}" --output "${output_file}" --quality ${quality} --fps ${fps} --quiet ${looped} ${temp_dir}*.${frames_format}`);
       break
    }
 
