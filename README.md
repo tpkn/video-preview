@@ -5,7 +5,7 @@ The module creates two types of previews:
  - Horizontal or vertical sprite sheet for css `animation-timing-function: steps(10, end)`
  - Animated gif image
 
-
+![preview](https://raw.githubusercontent.com/tpkn/video-preview/master/preview.jpg)
 
 ## API
 
@@ -143,7 +143,7 @@ Enables logging `stdout` / `stderr` data
 **Type**: _Object_  
 ```javascript
 {
-   file: 'z:\preview.gif'
+   file: 'z:/preview.gif'
 }
 ```
 
@@ -170,3 +170,6 @@ VideoPreview(input_file, output_file, frames, {
    console.log(err);
 })
 ```
+
+## PS
+ - Demo video: (c) copyright 2008, Blender Foundation / www.bigbuckbunny.org
